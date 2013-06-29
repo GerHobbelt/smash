@@ -1,0 +1,10 @@
+# Editor backup files
+*~
+*.bak
+
+# MSOffice temporary files
+~*
+
+# intermediates
+.directory
+node_modules/
