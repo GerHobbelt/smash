@@ -45,8 +45,6 @@ var argv = optimist
     })
     .argv;
 
-var moduleConfigTemplate = ""
-
 if (argv.help) return optimist.showHelp();
 
 if (argv.graph) return void smash.readGraph(argv._, argv, function(error, files) {
