@@ -57,7 +57,7 @@ if (argv.jsonConfig) return void smash.readConfig(argv._, argv, function(error, 
   console.log(JSON.stringify(files, null, 4));
 });
 
-if (argv.list) return void smash.readAllImports(argv._, function(error, files) {
+if (argv.list) return void smash.readAllImports(argv._, argv, function(error, files) {
   if (error) throw error;
   console.log(files.join("\n"));
 });
